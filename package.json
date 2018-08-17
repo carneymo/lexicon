@@ -1,0 +1,32 @@
+{
+  "name": "lexicon",
+  "version": "1.0.0",
+  "description": "Lexicon streams text from all languages into your native language.",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "win32": "electron-packager . myApp --platform=win32 --arch=ia32",
+    "win64": "electron-packager . myApp --platform=win32 --arch=x64",
+    "linux32": "electron-packager . myApp --platform=linux --arch=ia32",
+    "linux64": "electron-packager . myApp --platform=linux --arch=x64",
+    "osx": "electron-packager . myApp --platform=darwin --arch=x64",
+    "build": "electron-packager . --all"
+  },
+  "keywords": [
+    "lexicon",
+    "language",
+    "stream"
+  ],
+  "author": "Ryan P Carney-Mogan",
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "electron": "^2.0.7"
+  },
+  "dependencies": {
+    "express": "^4.16.3",
+    "google-translate-api": "^2.3.0",
+    "http": "0.0.0",
+    "jquery": "^3.3.1",
+    "socket.io": "^2.1.1"
+  }
+}
